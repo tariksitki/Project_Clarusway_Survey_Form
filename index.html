@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clarusway Survey Form </title>
+  </head>
+  <body>
+
+    <div id="container"> 
+
+    <header>
+      <h1 id="header">Clarusway Survey <span>Form</span></h1>
+      <!-- <p id="paragraph">Thank you for taking the time to help us improve the platform</p> -->
+    </header>
+
+    <section>
+      <form action="result.html">
+        <div>
+          <label for="name">Name</label> <br />
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <label for="surname">Surname</label> <br />
+          <input type="text" name="surname" id="surname" />
+        </div>
+
+        <div>
+          <label for="email">E-Mail</label> <br />
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="role" id="biglabel">
+            Which option best describes your current role?</label
+          >
+          <br />
+          <select name="role" id="role" size="3">
+            <option value="" style=" font-weight: bold;">Select current Role</option>
+            <option value=""></option>
+
+            <optgroup label="Software">
+              <option value="web developer">Web Developer</option>
+              <option value="data science">Data Science</option>
+              <option value="siber security">Siber Security</option>
+              <option value="Aws Devops"></option>
+            </optgroup>
+
+            <optgroup label="Hardware">
+                <option value="network">Network</option>
+            </optgroup>
+          </select>
+        </div>
+
+
+        <div>
+            <label for="" id="biglabel">Would you recommend Clarusway to a friend?</label> <br>
+            
+            <input type="radio" name="recommend" id="yes" value="definitely yes" checked>
+            <label for="">Definitely Yes</label>  <br>
+
+            <input type="radio" name="recommend" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label> <br>
+
+            <input type="radio" name="recommend" id="notsure" value="not sure">
+            <label for="notsure">Not Sure</label> <br>
+
+            <input type="radio" name="recommend" id="definitelyno" value="definitely no">
+            <label for="definitelyno">Definitely No</label>
+        </div>
+
+
+
+        <!-- Not: Select type da, secenekler arasinda en üstteki satirin 
+            "Please choose a feature" olmaisni yani bir secenek olmamasini istiyorsak
+            Bu durumda bu option un value kismini bos birakiriz. yani database e 
+            bir deger gitmez. ve biz bu seceengi required yaparsak buraya bir deger 
+            secmeden islem yapmaz -->
+
+        <div>
+            <label for="feature" id="biglabel">What is your favorite feature of Clarusway</label> <br>
+            <select name="favourite feature" id="feature" required>
+                
+                <option value="" style="font-weight: bold; text-transform: capitalize; color: rgb(218, 52, 52);">Please choose a feature</option>
+                <option value="instructors">Instructors</option>
+                <option value="curriculum">Curriculum</option>
+                <option value="Learning Method">Learning Method</option>
+            </select>
+            
+        </div>
+
+
+        <div>
+            <label for="" id="biglabel">What would you like to see improved?(Check all that apply)</label> <br>
+
+            <input type="checkbox" name="liketosee" id="frontend" value="frontend">
+            <label for="frontend">Frond-end Projects</label> <br>
+
+            <input type="checkbox" name="liketosee" id="backend" value="backend">
+            <label for="backend">Back-end Projects</label> <br>
+
+            <input type="checkbox" name="liketosee" id="datascience" value="datascience">
+            <label for="datascience">Data Science</label> <br>
+
+            <input type="checkbox" name="liketosee" id="additional" value="additional">
+            <label for="additional">Additional Courses</label>
+        </div>
+
+
+        <div>
+            <label for="comment" id="biglabel">Any comments or suggestions?</label> <br>
+            <textarea name="comment" id="" cols="20" rows="3" placeholder="Enter your comment here"></textarea>
+        </div>
+        
+
+        <div id="divbutton">  
+            <button type="submit">Submit</button>
+        </div>
+
+      </form>
+    </section>
+</div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  
+  </body>
+</html>
